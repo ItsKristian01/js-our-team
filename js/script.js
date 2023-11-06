@@ -32,12 +32,26 @@ const teamMembers = [
 ]
 
 // console.log(teamMembers);
+const rowElem = document.querySelector(".row");
+let teamElem = "";
 
 for (let i = 0; i < teamMembers.length; i++) {
     const curElement = teamMembers[i];
+    teamElem += `
+    <div class="card">
+    <img src="" class="card-img-top" alt="">
+    <div class="card-body">
+      <p>Name: ${curElement.name} </p>
+      <p>Profession: ${curElement.profession} </p>
+      <p>Profession: ${curElement.image} </p>
+    </div>
+  </div>`;
     console.log(curElement.name);
     console.log(curElement.profession);
     console.log(curElement.image);
-
 }
+
+console.log(teamElem);
+rowElem.innerHTML = teamElem;
+
 
