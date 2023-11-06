@@ -1,8 +1,8 @@
 const teamMembers = [
     {
-        name: "Wayne Barnett",
-        profession: "Founder & CEO",
-        image: "wayne-barnett-founder-ceo.jpg"
+      name: "Wayne Barnett",
+      profession: "Founder & CEO",
+      image: "wayne-barnett-founder-ceo.jpg"
     },
    {
     name: "Angela Caroll",
@@ -31,5 +31,13 @@ const teamMembers = [
    }
 ]
 
-console.log(teamMembers);
-  
+// console.log(teamMembers);
+
+for (let i = 0; i < teamMembers.length; i++) {
+    const curElement = teamMembers[i];
+    console.log(curElement.name);
+    console.log(curElement.profession);
+    console.log(curElement.image);
+
+}
+
