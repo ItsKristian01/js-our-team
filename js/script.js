@@ -43,7 +43,7 @@ for (let i = 0; i < teamMembers.length; i++) {
     <div class="card-body">
       <p>Name: ${curElement.name} </p>
       <p>Profession: ${curElement.profession} </p>
-      <p>Profession: ${curElement.image} </p>
+      <p>Image: ${curElement.image} </p>
     </div>
   </div>`;
     console.log(curElement.name);
