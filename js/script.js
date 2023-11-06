@@ -39,11 +39,10 @@ for (let i = 0; i < teamMembers.length; i++) {
     const curElement = teamMembers[i];
     teamElem += `
     <div class="card">
-    <img src="" class="card-img-top" alt="">
+    <img src="img/${curElement.image}" class="card-img-top p-2" alt="">
     <div class="card-body">
       <p>Name: ${curElement.name} </p>
       <p>Profession: ${curElement.profession} </p>
-      <p>Image: ${curElement.image} </p>
     </div>
   </div>`;
     console.log(curElement.name);
